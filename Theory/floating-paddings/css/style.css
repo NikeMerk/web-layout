@@ -1,0 +1,25 @@
+html {
+	box-sizing: border-box;
+}
+*,
+**::before,
+**::after {
+	box-sizing: inherit;
+}
+
+.container {
+	margin: 0 auto;
+	background-color: yellowgreen;
+	padding: 0 max(10px, 3vw);
+	/* padding: 0 30px; */
+}
+.content {
+	background-color: pink;
+	height: 400px;
+}
+.text-content-one {
+	 font-size: 2vw; /* изменение по горизонтали */
+}
+.text-content-two {
+	font-size: 2vh; /* изменение по вертикали */
+}

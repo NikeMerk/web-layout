@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/castom checkbox/css/normolise.css">
+	<link rel="stylesheet" href="/castom checkbox/css/style.css">
+</head>
+<body class="page">
+	<div class="container">
+		<div class="block-example flex">
+			<div class="block"> <!-- блок с дефолтными состояниями -->
+
+				<h1 class="titl">default checkbox - состояния</h1>
+				<div class="default-checkbox-block">
+					<label class="label">
+						<input class="default-checkbox" type="checkbox" id="checkbox-one"> default
+					</label>
+					<label class="label">
+						<input class="default-checkbox" type="checkbox" id="checkbox-two" checked> active
+					</label>
+					<label class="label">
+						<input class="default-checkbox" type="checkbox" id="checkbox-three" disabled> no click (disabled)
+					</label>
+					<label class="label">
+						<input class="default-checkbox" type="checkbox" id="checkbox-four" disabled checked> no click-checket (disabled checked)
+					</label>
+				</div>
+			</div>
+			<div class="block"> <!-- блок с кастомными состояниями -->
+
+				<h1 class="titl">custom checkbox - состояния</h1>
+				<div class="block-checkbox-custom">
+					<label class="label-custom flex"> 
+						<input class="input-checkbox" type="checkbox" id="checkbox-one">
+						<span class="span-checkbox"></span> <!-- из span мы делаем блок для checkbox -->
+						default
+					</label>
+					<label class="label-custom flex">
+						<input class="input-checkbox" type="checkbox" id="checkbox-two" checked>
+						<span class="span-checkbox"></span> <!-- из span мы делаем блок для checkbox -->
+						active
+					</label>
+					<label class="label-custom flex">
+						<input class="input-checkbox" type="checkbox" id="checkbox-three" disabled>
+						<span class="span-checkbox"></span> <!-- из span мы делаем блок для checkbox -->
+						no click (disabled)
+					</label>
+					<label class="label-custom flex">
+						<input class="input-checkbox" type="checkbox" id="checkbox-four" disabled checked>
+						<span class="span-checkbox"></span> <!-- из span мы делаем блок для checkbox -->
+						no click-checket (disabled checked)
+					</label>
+				</div>
+			</div>
+		</div>	
+
+		<div class="block"> <!-- блок с примерами кастомных checkbox -->
+
+			<h1 class="title-three">Примеры custom checkbox</h1>
+			<div class="block-custom-checkbox__example">
+				<label class="label-default">
+					<input type="checkbox"> default checkbox
+				</label>
+
+				<label class="label-example-one flex">
+					<input class="custom-checkbox-example-one" type="checkbox"> example custom checkbox
+					<span class="custom-span-example-one"></span>
+				</label>
+
+				<label class="label-example-two flex">
+					<input class="custom-checkbox-example-two" type="checkbox"> example custom checkbox
+					<span class="custom-span-example-two"></span>
+				</label>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

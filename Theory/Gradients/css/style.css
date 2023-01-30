@@ -1,0 +1,86 @@
+body {
+	padding:0;
+	margin: 0;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+
+	/* --------------------------- Линейный градиент --------------------------- */
+
+
+
+	/* 
+		1) При подключении градиента, выбирается функция --> background-image: а не background-color как могло бы показаться
+		2) Указываеться 3 gradient параметра через ',' --> background-image: linear-gradient(1-вый, 2-рой, 3-тий), где:
+			1-вый --> это либо угол наклона, лобо направление градации цвета.
+			2-рой и 3-тий --> это 2 обязательных цвета (не меньше 2) если меньше, тогда будет просто бакграунд. :
+	*/
+
+	/* background-image: linear-gradient(40deg, pink, black); 40deg --> 40 градусов */
+	
+	/* 	
+		если мы хотим укозать угол направления оттенка, делааем это чяерез 'to' 
+	*/
+
+	/* background-image: linear-gradient(to top, pink, black); */
+	/* background-image: linear-gradient(to bottom, pink, black); */
+	/* background-image: linear-gradient(to right, pink, black); */
+	/* background-image: linear-gradient(to left, pink, black); */
+
+	/* 
+		можно указывать все цвета котторые мы хотим видеть у себя в gradient что бы получилась палитра:		 
+	*/
+
+	/* background-image: linear-gradient(40deg, pink, black, green, blue); */
+
+	/* 
+		так же можно указать для цвета опорные точки в виде '%' или 'px' где 100% есть вся облатсь видимисти страницы. 
+		делается это для более плавного либо чёткого перехода.
+	*/
+
+	/* background-image: linear-gradient(40deg, pink 10%, black 500px, green 82%, blue); */
+	/* background-image: linear-gradient(40deg, yellow 25%, black 25%, black 40%, yellow 40%, yellow 60%, black 60%, black 80%); */
+	
+	/* 
+		так же можно сделать заполнение страници командой 'repeating':
+	*/
+
+	/* background-image: linear-gradient(45deg, yellow 25px, black 25px, black 50px, yellow 50px, yellow 75px, black 75px); без заполнения*/
+	/* background-image: repeating-linear-gradient(45deg, yellow 25px, black 25px, black 50px, yellow 50px, yellow 75px, black 75px); с заполнением */
+
+	/* --------------------------- Радиальный градиент --------------------------- */
+
+	/* 
+		для работы радиального градиента достаточно 2 критериев(цветов):
+	*/
+	/* background: radial-gradient(green, black); */
+
+	/* 
+		но как и у линейного есть первое значение для более точного редактирования градации
+		и состоит оно из 2 ключевых слов 1 --> ellipse; 2 --> circle:
+	*/
+	/* background-image: radial-gradient(ellipse, green, black); */
+	/* background-image: radial-gradient(circle, green, black); */
+	/* background-image: radial-gradient(circle closest-side, green, black); */
+	/* background-image: radial-gradient(circle closest-corner, green, black); */
+	/* background-image: radial-gradient(circle farthest-side, green, black); */
+	/* background-image: radial-gradient(circle farthest-corner, green, black); */
+	/* background-image: repeating-radial-gradient(circle, green 25%, black 46%); */
+	
+}
+.list {
+	width: 400px;
+	height: 200px;
+	margin-bottom: 20px;
+	background-color: aqua;
+	background-image: linear-gradient(to) ;
+}
+.list-first {
+	width: 400px;
+	height: 200px;
+	margin-bottom: 20px;
+	background-color: aqua;
+	background-image: linear-gradient(to right, white, black); ;
+}

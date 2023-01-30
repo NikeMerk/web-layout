@@ -1,0 +1,185 @@
+
+html {
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+/* общее (можно не смотреть, все это просто красоты ради)*/
+.page {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: rgb(191, 191, 191);
+}
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+.flex {
+	display: flex;
+}
+.label {
+	display: block;	
+	margin-bottom: 20px;
+}
+.title {
+	font-style: 1.7em;
+	display: inline-block;
+}
+.title-three {
+	margin-left: 25%;
+}
+.label-default {
+	margin-bottom: 20px;
+	display: block;
+}
+/* ---- блок с кастомными СОСТОЯНИЯМИ ---- */
+/* Тут я подробно опишу шаги и обьясню их, а ниже сделаю примеры стилизации */
+
+/* Шаг-1 (выравнивание контент в Лейбл) */
+.label-custom {
+	align-items: center; /* выравниваем в label контент по центру  */
+	margin-bottom: 15px; /* Просто сделал отступ между Лейблами */
+	padding-left: 20px;  /* Отступаем на то количество пикселей, каким в ширину будет чекбокс
+	что бы сам чекбокс не оказался за контентной частью слева */
+}
+
+/* Шаг-2 (Скрываем исходный checkbox) */
+.input-checkbox {
+	opacity: 0;		/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
+	width: 0;			/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
+	height: 0;		/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
+}
+
+/* Шаг-3 (создаем новый checkbox и тянем его на место старого) */
+.span-checkbox {
+	position: absolute; 			 	/* ставим ему абсолют */
+	width: 12px;								/* ширину */
+	height: 12px;								/* высоту */
+	border: 3px solid green;	 /* указ бордер */
+	margin-left: -20px; 				/* span уходит в лево на 20px
+  (что бы не лез на сам текст) */
+}
+
+/* Шаг-4 (состояние checked) */
+.input-checkbox:checked + .span-checkbox::before { /* Расшифровка записи: При нажании на input-checkbox, сделай в span следующее... */
+	content: ''; 											/* делаем квадратик внутри чекбокса */
+	position: absolute;								/* как обычно абсолют */
+	width: 8px;												/* ширина */
+	height: 8px;											/* высота */
+	top: 50%;													/* отступ всерху 50% */
+	left: 50%;												/* отступ снизу 50% */
+	transform: translate(-50%, -50%); /* !ВАЖНО! 
+	этой командой мы уравновесим отступы (прикол в том что квадрат который мы создаем
+	начинается с левой верхней точки, а раз мы сказали что он будет в центре, то он 
+	и переместится в центр, но не встал своим центром в центр чекбокса, а встал туда 
+	левым верхним углом) - убери эту команду что бы понять о чём я! */
+	background-color: green;
+}
+
+/* Шаг-5 (состояние focus) */
+/* ! ВАЖНО ! 
+	При создании кастомного checkbox необходимо делать focus при TAB (табуляции). Это общее правило! В стандартных checkbox
+	это сделано автоматически - браузером, и normolise.css. Стилизация Фокуса должна быть определена заказчиком в Макете
+	вашего проекта.
+*/
+.input-checkbox:focus + .span-checkbox		{
+	box-shadow: 0 0 0 2px black; /* не через бордер */
+}
+
+/* Два Дополнительных Состояния для кастомного чекбокса */
+
+/* состояние disabled */
+.input-checkbox:disabled + .span-checkbox {
+	border-color: gray;
+}
+/* состояние disabled-checked */ 
+.input-checkbox:checked:disabled + .span-checkbox::before { /* тут ::before потому что наш квадрат(внутренний) это background-color который в ::before. Можешь убрать ::before и посмотри что получится */
+	background-color: gray;
+}
+
+
+
+
+
+/* ---- Примеры custom checkbox ---- */
+/* label-example-one - как и чекбокс с примером выше (внутри которого мы делаем какой то блок с заполнением) */
+
+.label-example-one {
+	margin-bottom: 20px;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.custom-checkbox-example-one {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.custom-span-example-one {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border: 2px solid green;
+	border-radius: 2px;
+	margin-left: -22px;
+}
+
+.custom-checkbox-example-one:checked + .custom-span-example-one::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 8px;
+	width: 8px;
+	background-color: green;
+	border-radius: 1px;
+	transform: translate(-50%, -50%);
+}
+
+.custom-checkbox-example-one:focus + .custom-span-example-one {
+	box-shadow: 0 0 0 3px black;
+}	
+
+/* label-example-two - пример чекбокса внутри которого мы делаем не блок а img */
+
+.label-example-two {
+	margin-left: 20px;
+	align-items: center;
+}
+
+.custom-checkbox-example-two {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.custom-span-example-two {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	margin-left: -20px;
+	border: 1px solid white;
+	border-radius: 1px;
+	background-color: black;
+}
+
+.custom-checkbox-example-two:checked + .custom-span-example-two::before {
+	content: '';
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.94952 1.08233L3.99977 6.03208L1.17135 3.20365' stroke='%2397EE3F' stroke-width='2'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:contain;
+}
+
+.custom-checkbox-example-two:focus + .custom-span-example-two {
+	box-shadow: 0 0 0 2px green;
+}

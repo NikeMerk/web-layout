@@ -1,0 +1,100 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:root {
+	--margin-cards:40px;
+}
+
+img {
+	width: 100%;
+}
+
+section:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.page {
+	min-width: 768px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: var(--gray-light-color);
+}
+
+.container-header {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-header {
+	width: 50%;
+}
+
+.nav-list {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1800px; /* добавил по 15 px что б не прилепало к стенкам */
+  padding: 0 15px; /* добавил по 15 px что б не прилепало к стенкам */
+  margin: 0 auto;
+	background-color: gray;
+}
+
+.header-logo {
+	width: 50px;
+	height: 50px;
+}
+.logo-image {
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+}
+
+.block-title {
+	margin-left:auto;
+}
+
+.list_reset	{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.list-one {
+	justify-content: space-between;
+}
+
+.item-one {
+  width:calc((100% - var(--margin-cards) * 2) / 3);
+	padding: 20px;
+	background-color: green;
+}
+
+.list-two {
+	justify-content: space-between;
+}
+
+.item-two {
+	width: calc((100% - var(--margin-cards) * 3) / 4);
+	background-color: aqua;
+}
+
+.div-image {
+	padding: 20px 0 20px 20px;
+	height: 450px;
+	background-image: url(/adaptiv/image/japanese-girl-japanese-culture-japanese-tradition-samurai-3840x2160-7337.jpg);
+	background-position: top;;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

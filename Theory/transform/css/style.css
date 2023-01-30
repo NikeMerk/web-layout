@@ -1,0 +1,54 @@
+html {
+	box-sizing: border-box;
+}
+*,
+**::before,
+**::after {
+	box-sizing: inherit;
+}
+
+body {
+	width: 1200px;
+	background-color: antiquewhite;
+}
+.container {
+	width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+.content {
+	margin: 0 auto;
+}
+.li {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background-color: green;
+	transition: 1s;
+}
+.li:hover {
+	transform: scale(2);
+}
+.herNaher {
+	list-style: none;
+	width: 200px;
+	height: 200px;	
+	background-color: gray;
+	position: relative;
+}
+.linkHer {
+	display: inline-block;
+	margin: 30px;
+}
+.linkHer::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: 1s;
+}
+.linkHer:hover::after .linkHer{
+	transform:scale(2)
+}
