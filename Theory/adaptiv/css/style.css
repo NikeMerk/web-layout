@@ -11,12 +11,18 @@ html {
 	--margin-cards:40px;
 }
 
+
 img {
 	width: 100%;
 }
 
 section:not(:last-child) {
 	margin-bottom: 30px;
+}
+
+.link-reset {
+	text-decoration: none;
+	color: inherit;
 }
 
 .page {
@@ -31,8 +37,8 @@ section:not(:last-child) {
 	align-items: center;
 }
 
-.nav-header {
-	width: 50%;
+.nav-link:not(:last-child) {
+	margin-right: 30px;
 }
 
 .nav-list {
@@ -82,19 +88,30 @@ section:not(:last-child) {
 }
 
 .list-two {
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .item-two {
 	width: calc((100% - var(--margin-cards) * 3) / 4);
 	background-color: aqua;
+	margin-bottom: var(--margin-cards);
+}
+
+.item-two:nth-last-child(-n+4){
+	margin: 0;
 }
 
 .div-image {
 	padding: 20px 0 20px 20px;
 	height: 450px;
-	background-image: url(/adaptiv/image/japanese-girl-japanese-culture-japanese-tradition-samurai-3840x2160-7337.jpg);
+	background-image: url(/Theory/adaptiv/image/japanese-girl-japanese-culture-japanese-tradition-samurai-3840x2160-7337.jpg);
 	background-position: top;;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+	.container {
+		background-color: green;
+	}
 }
