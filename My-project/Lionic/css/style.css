@@ -1,0 +1,31 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page {
+	min-width: 320px;
+}
+
+.container {
+	max-width: 1270px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+section:not(:last-child) {
+	margin-bottom: 87px;
+}
+
+.flex {
+	display: flex;
+}
+
+.list-reset {
+	list-style: none;
+}
+
