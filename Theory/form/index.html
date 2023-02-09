@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/Theory/form/css/style.css">
+</head>
+<body>
+	
+<!-- ПРИМЕР ФОРМЫ И ЕЕ ОТПРАВКИ -->
+
+	<form method="POST" action="https://jsonplaceholder.typicode.com/posts" class="form">
+		<div class="form-block-left flex">
+			<div>
+				<input class="form-input form-blocks form-blocks--style" name="name" type="text" placeholder="Name" required>
+				<input class="form-input form-blocks form-blocks--style" name="email" type="text" placeholder="E-mail" required>
+				<input class="form-input form-blocks form-blocks--style" name="phone"  type="text" placeholder="Phone" required>
+				<select class="form-select form-blocks form-blocks--style" name="contry" placeholder="Contry">
+					<option style="display: none;" value="Contry">Contry</option>
+					<option class="form-select__option" value="United Kingdom">United Kingdom</option>
+					<option class="form-select__option" value="United States">United States</option>
+					<option class="form-select__option" value="France">France</option>
+					<option class="form-select__option" value="Germany">Germany</option>
+					<option class="form-select__option" value="Spain">Spain</option>
+					<option class="form-select__option" value="Estonia">Estonia</option>
+				</select>
+			</div>
+			<div class="form-block-right">
+				<textarea class="form-textarea" placeholder="Comment" name="comment"></textarea>
+			</div>
+		</div>
+		<div class="form__block flex">
+			<div class="form__block-button flex">
+				<button class="form-button">GET STARTED</button>
+				<label class="form-label flex">
+					<input required class="form-checkbox" type="checkbox">I agree with the 
+					<span class="form-span"></span>
+				</label>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

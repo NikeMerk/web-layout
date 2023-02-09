@@ -46,7 +46,7 @@ html {
 }
 
 /* Шаг-2 (Скрываем исходный checkbox) */
-.input-checkbox {
+.input -checkbox {
 	opacity: 0;		/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
 	width: 0;			/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
 	height: 0;		/* Скрываем исходный checkbox (один из методов скрытия чекбокс (display: none; - тут не подойдет)) */
@@ -145,10 +145,7 @@ html {
 
 /* label-example-two - пример чекбокса внутри которого мы делаем не блок а img */
 
-.label-example-two {
-	margin-left: 20px;
-	align-items: center;
-}
+
 
 .custom-checkbox-example-two {
 	opacity: 0;

@@ -16,9 +16,6 @@ body {
   margin: auto;
   padding: 0 15px;
 }
-.content {
-	margin: 0 auto;
-}
 .li {
 	width: 100px;
 	height: 100px;
@@ -52,3 +49,5 @@ body {
 .linkHer:hover::after .linkHer{
 	transform:scale(2)
 }
+
+/*  */
