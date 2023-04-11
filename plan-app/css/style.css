@@ -1,0 +1,54 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px; /* добавил 100 px что б не прилепало к стенкам */
+  padding: 40px 15px; /* добавил по 50 px что б не прилепало к стенкам */
+  margin: 0 auto;
+}
+
+.calendar {
+	display: grid;
+	width: 500px;
+	gap: 10px;
+}
+
+.calendar__head {
+	display: grid;
+	gap: 10px;
+	background-color: rgb(121, 126, 126);
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.calendar__month {
+	font-size: 25px;
+}
+
+.calendar__body {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+}
+
+.calendar__cell-weekday-day {
+	background-color:blueviolet;
+	padding: 20px;
+}
+
+.calendar__cell-weekend {
+	background-color: green;
+}
+
+.calendar__cell {
+	background-color:rgb(116, 152, 108);
+}

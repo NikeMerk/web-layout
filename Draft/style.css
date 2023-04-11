@@ -1,0 +1,36 @@
+.title {
+	font-weight: 100;
+	font-size: 42px;
+	line-height: 35px;
+}
+.block {
+	width: 500px;
+	background-image: url(/image/low-angle-photo-of-balconies-2462015\ 1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.button {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, margin-right 0.2s linear;
+	border: 1px solid green;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.drow {
+	display: none;
+}
+
+.button:hover {
+	color: brown;
+	background-color: aqua;
+	/* transform: scale(1.5); */
+	margin-right: 30px;
+}
+
+.button:hover .drow{
+	display: block;
+}

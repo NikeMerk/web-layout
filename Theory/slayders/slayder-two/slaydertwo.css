@@ -1,0 +1,41 @@
+
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-wrapper {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+.container {
+	width: 1200px;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+.slider-box {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background-color: green;
+	overflow: hidden;
+}

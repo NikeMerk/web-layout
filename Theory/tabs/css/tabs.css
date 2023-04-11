@@ -1,0 +1,11 @@
+.button-active {
+	color: green;
+}
+
+.block-content {
+	display: none;
+}
+
+.block-content--active {
+	display: block;
+}
