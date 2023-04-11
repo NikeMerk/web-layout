@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/table.css">
+	<script defer src="/js/table.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		
+		<table class="table"  cellspacing="0" cellpadding="10">
+		<!-- cellspacing (отступ ячеек друг от друга) -->
+		<!-- cellpadding (отступ ячеек от краев своего блока) -->
+
+
+		<caption class="table__caption">Заголовок</caption>  
+	
+		<thead class="table__head">
+			<tr class="table__horizon-head">
+				<td class="table__vertical-head"><button class="table__button" data-path="name">Name</button></td>
+				<td class="table__vertical-head"><button class="table__button" data-path="surname">Surname</button></td>
+				<td class="table__vertical-head"><button class="table__button" data-path="age">Age</button></td>
+			</tr>
+		</thead>
+
+		<tr class="table__horizon">
+			<td class="table__vertical" data-target="name">Anna</td>
+			<td class="table__vertical">Merkusheva</td>
+			<td class="table__vertical">27</td>
+		</tr>
+
+		<tr class="table__horizon">
+			<td class="table__vertical" data-target="name">Hristof</td>
+			<td class="table__vertical">Kolumb</td>
+			<td class="table__vertical">39</td>
+		</tr>
+
+		<tr class="table__horizon">
+			<td class="table__vertical" data-target="name">Vladimir</td>
+			<td class="table__vertical">Surakin</td>
+			<td class="table__vertical">122</td>
+		</tr>
+
+		<tr class="table__horizon">
+			<td class="table__vertical" data-target="name">Bogdan</td>
+			<td class="table__vertical">Narishkin</td>
+			<td class="table__vertical">5</td>
+		</tr>
+
+	</table>
+
+	</div>
+</body>
+</html>
