@@ -29,15 +29,6 @@
 		display: block;
 	}
 
-	.services__cards:nth-child(2n) {
-		margin-right: 0;
-	}
-
-	.services__cards {
-		width: calc((100% - var(--margin-services)) / 2);
-		margin-bottom: var(--margin-services);
-	}
-
 	.footer-container {
 		flex-direction: column;
 		align-items: center;
@@ -45,10 +36,6 @@
 
 	.footer-left {
 		margin-bottom: 15px;
-	}
-
-	.clients__cards {
-		padding: 15px 15px 30px 15px;
 	}
 }
 

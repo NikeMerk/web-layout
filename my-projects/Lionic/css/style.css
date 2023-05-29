@@ -56,8 +56,6 @@ section:not(:first-child) {
 }
 .container {
 	max-width: 1200px;
-	padding: 0 25px;
-	margin: 0 auto;
 }
 .flex {
 	display: flex;
@@ -213,7 +211,7 @@ h1, h2, h3, h4, h5, p {
 /* ---_--- home ---_--- */
 
 .home {
-	background-image: url(/image/jpg/main.jpg);
+	background-image: url(/Lionic/image/jpg/main.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -341,8 +339,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 .services__cards {
-	position: relative;
-	width: calc((100% - var(--margin-services) * 3) / 4);
 	flex-direction: column;
 	align-items: center;
 	padding: 61px 30px;
@@ -361,9 +357,6 @@ h1, h2, h3, h4, h5, p {
 	right: -1px;
 }
 
-.services__cards:not(:last-child) {
-	margin-right: var(--margin-services);
-}
 
 .services__cards:hover {
 	background-color: var(--accent-color);
@@ -425,20 +418,14 @@ h1, h2, h3, h4, h5, p {
 	line-height: 130%;
 }
 
-.articles-list {
-	flex-wrap: wrap;
+.articles-row:first-child {
+	margin-bottom: 15px;
 }
 
 .articles-list__item {
-	width:	calc((100% - var(--margin-services)) / 2);
 	min-height: 180px;
-	margin-bottom: var(--margin-services);
 	border: 1px solid #E4E4E4;
 	border-radius: 5px;
-}
-
-.articles-list__item:nth-child(2n - 1) {
-	margin-right: var(--margin-services);
 }
 
 .articles-list__left {
