@@ -1,0 +1,85 @@
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+/* --- ------- --- basic changes --- ------- --- */
+
+:root{
+	--colorOne: #05b1b1;
+	--colorTwo: #52339a;
+}
+
+header, footer, section {
+	padding: 100px 0;
+}
+
+/* --- ------- --- rest changes --- ------- --- */
+
+header {
+	padding: 200px 0;
+}
+
+header {
+	background:var(--colorOne);
+	background: url(/bootstrap/create__head-window-gradient/img/pattern.png),linear-gradient(90deg,var(--colorOne) 0%, var(--colorTwo) 100%);
+	background: url(/bootstrap/create__head-window-gradient/img/pattern.png),-moz-linear-gradient(90deg,var(--colorOne) 0%, var(--colorTwo) 100%);
+	background: url(/bootstrap/create__head-window-gradient/img/pattern.png),-webkit-linear-gradient(90deg,var(--colorOne) 0%, var(--colorTwo) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4FD8DD", endColorstr="#F962A0", GradientType=1 );
+	background-size: contain;
+}
+
+.block-content {
+	flex-direction: column;
+	align-items: center;
+}
+
+.block-content__play {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: var(--colorOne);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 auto;
+	transition: background-color .15s ease-in-out, transform .15s ease-in-out;
+}
+
+.block-content__play:hover {
+	background-color: var(--colorTwo);
+	transform: scale(1.1);
+}
+
+.block-content__play:active {
+	background-color: var(--colorOne);
+	transform: scale(1);
+}
+
+.block-content__triangle {
+	width: 0;
+	height: 0;
+	margin-right: -3px;
+	border-style: solid;	
+	border-width: 10px 0 10px 20px;
+	border-color: transparent white;
+}
+
+.header-link {
+	text-align:center;
+	width: 100%;
+	margin:0 auto;
+	text-decoration: none;
+	color: white;
+	padding: 13px;
+	border-radius: 15px;
+	background-color: var(--colorTwo);
+	font-size: 25px;
+}
