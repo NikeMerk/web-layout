@@ -1,0 +1,515 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+		table td {
+			border-collapse: collapse;
+		}
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		.plr-40 {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.pl-40 {
+			padding-left: 40px;
+		}
+
+		.p-30 {
+			padding-top: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			padding-left: 30px;
+		}
+
+		.pt-30 {
+			padding-top: 30px;
+		}
+
+		.pb-30 {
+			padding-bottom: 30px;
+		}
+
+		.ptb-30 {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.main-card {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.pb-21 {
+			padding-bottom: 21px;
+		}
+
+		.pb-26 {
+			padding-bottom: 26px;
+		}
+
+		.pb-16 {
+			padding-bottom: 16px;
+		}
+
+		.pb-12 {
+			padding-bottom: 12px;
+		}
+
+
+
+		.main-text {
+
+			padding-top: 32px;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 35px;
+		}
+
+		.main-title {
+			margin: 0;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			color: #515151;
+		}
+
+		.text {
+			padding-top: 13px;
+			margin: 0;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 24px;
+			color: #515151;
+		}
+
+		.table-picture__title {
+			padding-top: 26px;
+			margin: 0;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #FFFFFF;
+		}
+
+		.table-picture-padding {
+			padding-top: 26px;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 26px;
+		}
+
+		.table-picture__img {
+			padding-bottom: 21px;
+		}
+
+		.table-list__title {
+			margin: 0;
+			padding-bottom: 8px;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 24px;
+			color: white;
+		}
+
+		.table-list__text {
+			margin: 0;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: white;
+		}
+
+		.table-bonus__title {
+			margin: 0;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #515151;
+		}
+
+		.title-bonus {
+			padding-left: 40px;
+			padding-right: 40px;
+			margin: 0;
+			padding-bottom: 11px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			display: flex;
+			align-items: flex-end;
+			color: #515151;
+		}
+
+		.table-bonus__text {
+			margin: 0;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: #515151;
+		}
+
+		.table-bonus__img {
+			padding-bottom: 15px;
+		}
+
+		.table-bonus__card {
+			vertical-align: top;
+		}
+
+		.table-bonus__button {
+			width: 240px;
+			height: 45px;
+			border-radius: 48px;
+			background-color: #9D5CD0;
+			text-align: center
+		}
+
+		.table-bonus__button-link {
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 0%;
+			color: #FFFFFF;
+		}
+
+
+		.rights {
+			margin: 0;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 24px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #757575;
+		}
+
+		.copyright {
+			margin: 0;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 24px;
+			color: #757575;
+		}
+
+		.footer-link {
+			color: #9D5CD0;
+		}
+
+
+		@media (max-width: 620px) {
+			.table-600,
+			.table-picture,
+			.table-bonus {
+				width: 280px !important;
+			}
+			.logo-header {
+				padding-top: 17px;
+				padding-bottom: 17px;
+			}
+			.table-bonus__block-card {
+				padding-bottom: 0;
+			}
+			.main-text {
+				padding-top: 32px;
+				padding-left: 18px;
+				padding-right: 18px;
+				padding-bottom: 35px;
+			}
+			.main-card {
+				padding-left: 18px;
+				padding-right: 18px;
+			}
+			.mobile-bottom {
+				display: block;
+			}
+			.table-bonus__text {
+				padding-bottom: 30px;
+			}
+			.plr-18 {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+		}
+
+
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
+	<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ededed">
+		<tr>
+			<td>
+				<table class="header-table table-600" width="600px" cellpadding="0" cellspacing="0" align="center" bgcolor="black">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0" align="center" >
+								<tr>
+									<td class="logo-header ptb-30" align="center">
+										<img src="/image/Лого.png" alt="" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table class="main-table table-600" width="600px" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td>
+							<table class="table-600" cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td align="center">
+										<img src="/image/Rectangle 6.jpg" alt="picture" />
+									</td>
+								</tr>
+
+								<tr>
+									<td class="main-text" bgcolor="#FFFFFF" align="left">
+										<h1 class="main-title" style="font-family: Arial, Helvetica, sans-serif">Торжество импрессионизма</h1>
+										<p class="text" style="font-family: Arial, Helvetica, sans-serif">
+											Опыт говорит нам, что семантический разбор внешних противодействий требует анализа
+											новых принципов формирования материально-технической и&nbsp;кадровой базы.
+											<br/>Задача организации, в&nbsp;особенности&nbsp;же внедрение современных методик,
+											в&nbsp;своём классическом представлении, допускает внедрение глубокомысленных рассуждений.
+											Есть над чем задуматься: элементы политического процесса преданы<br/> социально-демократической
+											анафеме! Но&nbsp;интерактивные прототипы заблокированы
+											в&nbsp;рамках своих собственных рациональных ограничений. Сторонники тоталитаризма
+											в&nbsp;науке ограничены исключительно образом мышления.
+										</p>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<table class="table-picture" width="600px" cellpadding="0" cellspacing="0" bgcolor="black" align="center">
+											<tr>
+												<td class="main-card pb-21">
+													<h2 class="table-picture__title" style="font-family: Arial, Helvetica, sans-serif">Представленные художники</h2>
+												</td>
+											</tr>
+											<tr>
+												<td class="main-card">
+													<table class="table-list" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="pb-26">
+																<img class="table-picture__img" src="/image/Rectangle 166.jpg" alt="" />
+																<h3 class="table-list__title" style="font-family: Arial, Helvetica, sans-serif" >Поль Гоген</h3>
+																<p class="table-list__text" style="font-family: Arial, Helvetica, sans-serif" >
+																	А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы
+																	освещают чрезвычайно <br/> интересные особенности картины в&nbsp;целом.
+																</p>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="pb-26">
+																<img class="table-picture__img" src="/image/Rectangle 166 (1).jpg" alt="" />
+																<h3 class="table-list__title" style="font-family: Arial, Helvetica, sans-serif" >Поль Гоген</h3>
+																<p class="table-list__text" style="font-family: Arial, Helvetica, sans-serif" >
+																	А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы
+																	освещают чрезвычайно <br/> интересные особенности картины в&nbsp;целом.
+																</p>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="pb-26">
+																<img class="table-picture__img" src="/image/Rectangle 166 (2).jpg" alt="" />
+																<h3 class="table-list__title" style="font-family: Arial, Helvetica, sans-serif" >Поль Гоген</h3>
+																<p class="table-list__text" style="font-family: Arial, Helvetica, sans-serif" >
+																	А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы
+																	освещают чрезвычайно <br/> интересные особенности картины в&nbsp;целом.
+																</p>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="pb-26">
+																<img class="table-picture__img" src="/image/Rectangle 166 (3).jpg" alt="" />
+																<h3 class="table-list__title" style="font-family: Arial, Helvetica, sans-serif" >Поль Гоген</h3>
+																<p class="table-list__text" style="font-family: Arial, Helvetica, sans-serif" >
+																	А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы
+																	освещают чрезвычайно <br/> интересные особенности картины в&nbsp;целом.
+																</p>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="pb-26">
+																<img class="table-picture__img" src="/image/Rectanglse 166.jpg" alt="" />
+																<h3 class="table-list__title" style="font-family: Arial, Helvetica, sans-serif" >Поль Гоген</h3>
+																<p class="table-list__text" style="font-family: Arial, Helvetica, sans-serif" >
+																	А&nbsp;также сделанные на&nbsp;базе интернет-аналитики выводы
+																	освещают чрезвычайно <br/> интересные особенности картины в&nbsp;целом.
+																</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="center">
+										<table class="table-bonus" width="600px" cellpadding="0" cellspacing="0" bgcolor="#fff" align="center">
+											<tr>
+												<td>
+													<table class="table-600" width="600px" cellpadding="0" cellspacing="0" align="center">
+														<tr>
+															<td>
+																<h3 class="title-bonus pt-30 plr-18" style="font-family: Arial, Helvetica, sans-serif">И&nbsp;это ещё не&nbsp;всё!</h3>
+															</td>
+														</tr>
+														<tr>
+															<td class="table-bonus__block-card pb-30 ">
+																<table class="table-600" cellpadding="0" cellspacing="0" align="center">
+																	<tr>
+																		<td class="table-bonus__card mobile-bottom pl-40 plr-18">
+																			<img class="table-bonus__img" src="/image/check-square.png" alt="picture" />
+																			<p class="table-bonus__text" style="font-family: Arial, Helvetica, sans-serif">Уникальные подборки <br/> работ с&nbsp;авторскими рецензиями</p>
+																		</td>
+																		<td class="table-bonus__card mobile-bottom pl-40 plr-18">
+																			<img class="table-bonus__img" src="/image/calendar.png" alt="picture" />
+																			<p class="table-bonus__text" style="font-family: Arial, Helvetica, sans-serif">Возможность настроить<br/> нашу рассылку под свой личный вкус</p>
+																		</td>
+																		<td class="table-bonus__card mobile-bottom plr-40 plr-18">
+																			<img class="table-bonus__img" src="/image/arrow-up-circle.png" alt="picture" />
+																			<p class="table-bonus__text" style="font-family: Arial, Helvetica, sans-serif">У&nbsp;вас есть пожелания и&nbsp;предложения? <br/>
+																				Напишите нам в&nbsp;ответ на&nbsp;это письмо!</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td class="pb-30">
+																<table cellpadding="0" cellspacing="0" align="center">
+																	<tr>
+																		<td class="table-bonus__button">
+																			<a class="table-bonus__button-link" href="#" style="font-family: Arial, Helvetica, sans-serif">Узнать все подробности</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table class="footer table-600" width="600px" cellpadding="0" cellspacing="0" align="center" bgcolor="black">
+					<tr>
+						<td>
+							<table class="footer-table table-250" width="250px" cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td class="pb-12">
+										<table width="145px" cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td class="pt-30">
+													<a href="#" class="footer__link">
+														<img src="/image/vk.png" alt="" />
+													</a>
+												</td>
+												<td class="pt-30">
+													<a href="#" class="footer__link">
+														<img src="/image/instagram.png" alt="" />
+													</a>
+												</td>
+												<td class="pt-30">
+													<a href="#" class="footer__link">
+														<img src="/image/fb.png" alt="" />
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p class="rights pb-16" style="font-family: Arial, Helvetica, sans-serif">
+											Blanchard &copy;&nbsp;2020&nbsp;/ Все права защищены
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table class="table-600" width="600px" cellpadding="0" cellspacing="0" bgcolor="white">
+								<tr>
+									<td>
+										<table cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td>
+													<p class="copyright" style="font-family: Arial, Helvetica, sans-serif">
+														Вы&nbsp;можете так&nbsp;же <a class="footer-link" href="#">отписаться от&nbsp;рассылки</a>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

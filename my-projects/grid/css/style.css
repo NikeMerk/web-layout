@@ -1,0 +1,396 @@
+
+/* --- ------ Style.css ------ --- */
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Bold'), 
+	url('/fonts/Roboto/Roboto-Bold.woff') format('woff'),
+	url('/fonts/Roboto/Roboto-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Regular'),  
+	url('/fonts/Roboto/Roboto-Regular.woff') format('woff'),
+	url('/fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+html {
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+:root {
+	--accent-color: #3F2AFF;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.page {
+	min-width: 320px ;
+}
+.page-block {
+	pointer-events: none;
+	overflow:hidden;
+}
+.container {
+	padding: 0 15px;
+}
+.flex {
+	display: flex;
+}
+.list-reset {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.link-reset {
+	text-decoration: none;
+	color: inherit;
+}
+.btn-reset {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
+.header-burger {
+	display: none;
+}
+.header-burger-nav {display: none;}
+.header-burger-nav {
+	position: absolute;
+	display: none;
+	padding-left: 30px;
+	padding-right: 10px;
+	padding-top: 90px;
+	top: 60px;
+	right: -698px;
+	flex-direction: column;
+	background-color: #402bff;
+	border-radius: 15px;
+	width: 100%;
+	height: 500px;
+	transition: right .6s ease-in-out;
+}
+
+/* header */
+
+.header {
+	background-color: var(--accent-color);
+}
+
+.header-container--style {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.advantages-row-bottom__card {
+	align-items: center;
+}
+
+.header-nav__link {
+	color: white;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 21px;
+}
+
+.header-nav__link:not(:last-child) {
+	margin-right: 56px;	
+}
+
+/* advertising */
+
+.advertising {
+	background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.advertising__content-left {
+	flex-direction: column;
+}
+
+.advertising__content-left-title {
+	max-width: 459px;
+	margin-bottom: 27px;
+	padding-top: 132px;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+	color: white;
+	z-index: 1000;
+}
+
+.advertising__content-left-text {
+	max-width: 444px; 
+	margin-bottom: 62px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: white;
+}
+
+.advertising__content-left-button {
+	margin-bottom: 130px;
+	padding: 24px 76px;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: white;
+	background-color: var(--accent-color);
+}
+
+.advertising__content-width {
+	width: calc((100% - 18px) / 2);
+}
+
+.advertising__content-right {
+	background-image: url(/image/main/Group\ 95.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+/* advantages */
+
+.advantages {
+	padding-top: 80px;
+	margin-bottom: 80px;
+}
+
+.advantages-row-top{
+	margin-bottom: 22px;
+}
+
+.advantages__content-top-img {
+	background-image: url(/image/main/Vectary\ texture.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.advantages__content-top-title {
+	margin-bottom: 18px;
+	max-width: 380px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 100%;
+}
+
+.advantages__content-top-text {
+	max-width: 585px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.advantages-list {
+	justify-content: space-between;
+	padding-left: 0;
+}
+
+.advantages-list__item {
+	align-items: center;
+}
+
+.advantages__content-bottom-svg {
+	margin-right: 30px;
+}
+
+.advantages__content-bottom-text {
+	max-width: 240px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+}
+
+/* teachers */
+
+.teachers {
+	padding-top: 74px;
+	padding-bottom: 76px;
+	background: #212133;
+}
+
+.row-teachers-cards {
+	justify-content: space-between;
+}
+
+.teachers-title {
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 100%;
+	color: white;
+}
+
+.teachers-cards__card {
+	width:calc((100% - (30px * 3)) / 4);
+}
+
+.teachers-img {
+	border-radius: 25px 25px 0 0;
+	margin-bottom: 24px;
+}
+
+.teachers-cards-name {
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+	color: white;
+}
+
+.teacher-quote {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #85859B;
+}
+
+/* courses */
+
+.courses {
+	padding-top: 74px;
+	padding-bottom: 51px;
+}
+
+.courses-title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 100%;
+	margin-bottom: 23px;
+}
+
+.courses-row:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.courses-row__card {
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.courses-img {
+	position: relative;
+	max-width: 100%;
+	height: 180px;
+	flex-shrink: 0;
+	border-radius: 20px 20px 0 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.courses-row__block-hours {
+	position: absolute;
+	align-items: center;
+	right: 5px;
+	top: 12px;
+}
+
+.courses-row__block-hours-svg {
+	margin-right: 5px;
+}
+
+.courses-row__hours {
+	color:white ;
+}
+
+.courses-cards__card-bottom {
+	align-items: start;
+	justify-content: space-between;
+	min-height: 300px;
+	padding: 30px;
+	flex-basis: 100%;
+	flex-direction: column;	
+	background: #EDF0F9;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.courses-cards__card-bottom-text {
+	margin-bottom: 25px;
+}
+
+.courses-card__title {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.courses-card__span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #666666;
+}
+
+.courses-cards__card-block-button {
+	display: inline-block;
+}
+
+.courses-card__button {
+	padding: 20px 59px;
+	border-radius: 20px;
+	background: #3F2AFF;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+  bottom: 30px;
+  left: 30px;
+}
+
+/* footer */
+
+.footer-top {
+	max-width: 100%;
+	background: #2E2B44;
+}
+
+.footer-container {
+	min-height: 81px;
+	align-items: center;
+}
+
+.footer-list {
+	margin: 0 auto;
+}
+
+.footer__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.footer-bottom {
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.container-my {
+	width: 200px;
+	flex-direction: column;
+}
+.block {
+	display: flex;
+	max-width: 200px;
+	padding: 10px;
+	border: 1px solid black;
+	background-color: green;
+	flex-basis: 100%;
+}
